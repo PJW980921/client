@@ -2,6 +2,20 @@
   "name": "cyworld-app",
   "version": "0.1.0",
   "private": true,
+  "main": "src/page.tsx",
+  "homepage": "https://github.com/cyworld-web-application",
+  "contributors": [
+    {
+      "name": "PJW980921",
+      "email": "jackgg12322@gmail.com",
+      "url": "https://github.com/PJW980921"
+    },
+    {
+      "name": "Junobee25",
+      "email": "junobee25@gmail.com",
+      "url": "https://github.com/Junobee25"
+    }
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
