@@ -47,6 +47,7 @@ const config: Config = {
           navy: '#3892A6',
           orange: '#E66A00',
           purple: '#72449E',
+          blue: '#5B92AD',
         },
       },
     },

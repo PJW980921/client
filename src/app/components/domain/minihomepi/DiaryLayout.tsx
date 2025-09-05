@@ -6,9 +6,9 @@ import SideNavTab from './SideNavTab';
 
 const DiaryLayout = () => {
   return (
-    <div className="flex justify-center translate-y-12">
+    <div className="flex flex-col justify-center translate-y-12">
       <Hompi />
-      <div>
+      <div className="flex flex-row justify-center translate-x-28">
         <UserInfoSideBox />
         <Contents />
         <SideNavTab />

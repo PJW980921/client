@@ -3,6 +3,7 @@ import { MiniHomepageResponseProps } from './minihomepi';
 import { MinimiListProps } from './minimiList';
 import { MusicList } from './musicList';
 import { LoginProps, SelectMyMinimiProps, UserInfoProps } from './user';
+import { IlchonMsgProps } from './ilchonMsg';
 
 export const getMusicList = async (): Promise<MusicList[]> => {
   const response = await api.get('/musicShop/listTop100Bgm?limit=100');
@@ -69,4 +70,14 @@ export const getMiniHomepage = async (
 export const getTotalUsers = async () => {
   const response = await userApi.get('/user/api/count');
   return response.data;
+};
+
+export const getMiniHompiIlchonMessages = async (
+  homeId: number
+): Promise<IlchonMsgProps[]> => {
+  const response = await api.get(
+    `friendComment/findFriendComment?homeId=${homeId}`
+  );
+
+  https: return response.data;
 };
